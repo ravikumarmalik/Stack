@@ -1,6 +1,15 @@
 import java.util.Stack;
 
 public class stack5 {
+    public static void pushAtButtom(stack<integer> s, int data){
+        if(isEmpty()){
+            s.push(data);
+            return;
+        }
+        int top = s.pop();
+        pushAtButtom(s,data);
+        s.push(top);
+    }
     public static void reverseStack(Stack<Integer> S){
         if (S.isEmpty()){
             return;
