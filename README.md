@@ -107,7 +107,7 @@ push — a method that will ensure the addition of an element (in the top positi
 
 pop — a method that will provide the removal of an element (from the top position)
 
-readTop — a method that will return the value of the element that is in position top
+peek — a method that will return the value of the element that is in position top
 
 sEmpty — a method that will check the stack for emptiness
 
