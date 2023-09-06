@@ -16,7 +16,7 @@ public class stack {
 
          //pop operation
          public static int pop(){
-             if (isEmpty()){
+             if (isEmpty()){ // corner point
                  return -1;
              }
              int top=list.get(list.size()-1);
@@ -26,7 +26,7 @@ public class stack {
 
          //peek operation
          public static int peek(){
-             if (isEmpty()){
+             if (isEmpty()){ //corner point
                  return -1;
              }
              return list.get(list.size()-1);
