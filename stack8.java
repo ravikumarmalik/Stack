@@ -3,14 +3,14 @@ public class stack8 {
     public static boolean isValid(String str) {
         Stack<Character> s = new Stack<>();
         for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            if (ch == '(' || ch == '{' || ch == '[') {//opening
+            char ch = str.charAt(i); //esme opening and closing bracket store hai
+            if (ch == '(' || ch == '{' || ch == '[') {//opening case
                 s.push(ch);
             } else {
-                if (s.isEmpty()) {
+                if (s.isEmpty()) { //closing case
                     return false;
                 }
-                if ((s.peek() == '(' && ch == ')')
+                if ((s.peek() == '(' && ch == ')') //paring form () {} [] 
                         || (s.peek() == '{' && ch == '}')
                         || (s.peek() == '[' && ch == ']')) {
                     s.pop();
